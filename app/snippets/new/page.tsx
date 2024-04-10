@@ -1,5 +1,5 @@
 import React from "react";
-import { redirect } from "next/navigation";
+import { redirect, notFound } from "next/navigation";
 import { db } from "@/app/db";
 const Snippets = () => {
   async function createSnippet(formData: FormData) {
