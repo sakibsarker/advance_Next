@@ -1,6 +1,9 @@
 import React from "react";
 import { db } from "./db";
 import Link from "next/link";
+
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const snippets = await db.shippet.findMany();
   const renderedSnippets = snippets.map((snippet) => {
